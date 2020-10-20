@@ -1,0 +1,61 @@
+ #Write a Python program to sum all the items in a list
+def main():
+    print(sumList([2, 7, 5, 8]))
+    print(mult_List([2, 6, 4, 1]))
+    print(getLargest([4, 7, 2]))
+    print(getSmallest([4, 7, 2]))
+    print(reverseList([4, 6, 7, 8]))
+  
+  
+  
+def sumList(input_list):
+  list1 = []
+  for i in range(len(input_list)):
+    list1 = sum(input_list)
+    return list1
+
+# Sample Solution
+#Sample Solution:-
+
+
+def sum_list(items):
+    sum_numbers = 0
+    for x in items:
+        sum_numbers += x
+    return sum_numbers
+print(sum_list([1,2,-8]))
+    
+
+# Write a Python program to multiplies all the items in a list.
+def mult_List(input_list):
+    multiplied = 1
+    for i in input_list:
+        multiplied = multiplied * i
+    return multiplied 
+
+# Write a Python program to get the largest number from a list.
+def getLargest(input_list):
+    list1 = []
+    for i in range(len(input_list)):
+        list1 = max(input_list)
+    return list1
+
+# Write a Python program to get the smallest number from a list
+def getSmallest(input_list):
+    list1 = []
+    for i in range(len(input_list)):
+        list1 = min(input_list)
+    return list1
+
+#  Write a Python program to count the number of strings where the string length is 2 
+# or more and the first and last character are same from a given list of strings
+
+
+# Exercise Question 1: Given a Python list you should be able to display Python list in the following order
+
+def reverseList(input_list):
+    input_list.sort(reverse=True)
+    return input_list
+
+
+main()
